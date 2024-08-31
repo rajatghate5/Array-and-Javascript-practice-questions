@@ -78,20 +78,15 @@
 
 // 6. Check Prime number
 // let num = 20;
-// let flag = true;
-
 // function checkPrime(num){
-//     if(num < 2 || (num > 2 && num % 2 === 0)){
-//          flag = false;
-//     }else{
+//     if(num < 2 || (num > 2 && num % 2 === 0))return false 
+//     else{
 //         for (let i = 2; i < num ; i++){
 //             if (num % i === 0){
-//                 flag = false
-//                 break;
+//                return  false
 //             }
-//         }
 //     }
-//     return flag
+//     return true
 // }
 
 // console.log(checkPrime(num))
@@ -145,6 +140,17 @@
 
 // function sortArray(arr){
 //     return arr.sort((a,b) => a-b);
+                    OR
+//    for (let i =0; i < data.length - 1 ; i++){
+//     for(let j =0; j < data.length - i -1 ; j++){
+//         if(data[j] > data[j+1]){
+//             let temp = data[j]
+//             data[j] = data[j+1]
+//             data[j+1] = temp
+//         }
+//     }
+//    } 
+//    return data
 // }
 
 // console.log(sortArray(arr))
