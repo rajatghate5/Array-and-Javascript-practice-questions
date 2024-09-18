@@ -412,3 +412,18 @@
 // console.log(operation(a, b))
 
 // ------------------------------------------------------------------
+
+const myPr = new Promise((resolve, reject) => {
+    let success = true
+    if(success){
+        resolve("Hello")
+    }else{
+        reject("Promise Failed")
+    }
+})
+
+myPr.then((data) => {
+    console.log(data)
+}).catch((err) => {
+    console.error(err)
+})
